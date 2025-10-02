@@ -1,49 +1,80 @@
 <!DOCTYPE html>
-<html lamg = "ru">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Семестровая работа</title>
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-<div id="header">Хэдер</div>
-<div id="menu">
-    <ul>
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="pages/news.html">Новости</a></li>
-        <li><a href="pages/practices.html">Практики</a></li>
-        <li><a href="pages/goods.html">Товары</a></li>
-        <li><a href="pages/contacts.html">Контакты</a></li>
-    </ul>
+<!-- Изменение: Заменили div на семантические теги -->
+<div class="page-container">
+    <header class="header"> <!-- Было: <div class="header"> -->
+        <h1>Хэдер</h1> <!-- Добавили заголовок для семантики -->
+    </header>
+    <nav class="nav"> <!-- Было: <div class="nav"> -->
+        <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link"
+                                    href="index.html">Главная</a></li>
+            <li class="nav-item"><a class="nav-link"
+                                    href="pages/news.html">Новости</a></li>
+            <li class="nav-item"><a class="nav-link"
+                                    href="pages/practices.html">Практики</a></li>
+            <li class="nav-item"><a class="nav-link"
+                                    href="pages/goods.html">Товары</a></li>
+            <li class="nav-item"><a class="nav-link"
+                                    href="pages/contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+    <main class="content"> <!-- Было: <div class="content"> -->
+        <article class="profile-header"> <!-- Было: <div class="profileheader">
+-->
+            <h1 class="profile-title">Информация об авторе</h1>
+            <img alt="Фото
+автора" class="profile-photo" src="images/photo.jpg">
+            <h2 class="profile-name">Самончев Константин Петрович</h2>
+            <p class="profile-group">ЭФБО-03-24</p>
+        </article>
+        <section class="about-me"> <!-- Было: <div class="about-me"> -->
+            <h2>Обо мне</h2> <!-- Добавили заголовок для семантики -->
+            <p>Обо мне: Я родился в Видном в 06-м на краю города. Потом форма, драки, клей, МИРЭА</p>
+        </section>
+        <section class="skills-container"> <!-- Было: <div class="skillscontainer">
+-->
+            <h2>Мои навыки</h2> <!-- Добавили заголовок для семантики -->
+            <div class="skills-grid"> <!-- Обертка для Grid -->
+                <div class="skill-tag">Навык 1</div>
+                <div class="skill-tag">Навык 2</div>
+                <div class="skill-tag">Навык 3</div>
+                <div class="skill-tag">Навык 4</div>
+            </div>
+        </section>
+        <section class="experience-section"> <!-- Было: <div
+class="experience-section"> -->
+            <h2 class="section-title">Мой опыт работы</h2>
+            <div class="experience-grid"> <!-- Обертка для Grid -->
+                <article class="experience-card"> <!-- Было: <div
+class="experience-card"> -->
+                    <h3 class="experience-title">Опыт 1</h3>
+                    <p class="experience-desc">Работал фантазёром. Сочинял
+                        и праздновал.</p>
+                </article>
+                <article class="experience-card">
+                    <h3 class="experience-title">Опыт 2</h3>
+                    <p class="experience-desc">Работал воровством. Воровал
+                        и продавал.</p>
+                </article>
+                <article class="experience-card">
+                    <h3 class="experience-title">Опыт 3</h3>
+                    <p class="experience-desc">Работал рэпером. Читал и
+                        пел.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="footer"> <!-- Было: <div class="footer"> -->
+        <p>Футер</p> <!-- Добавили параграф для семантики -->
+    </footer>
 </div>
-<div id="content">
-    <p>Информация об авторе</p>
-    <img src="images/photo.jpg" alt="Фото автора" width="400"
-         height="250">
-    <p>Самончев Константин Петрович</p>
-    <p>ЭФБО-03-24</p>
-    <p>Обо мне: Я родился в Видном в 06-м на краю города. Потом форма, драки, клей, МИРЭА</p>
-    <div>Навык 1</div>
-    <div>Навык 2</div>
-    <div>Навык 3</div>
-    <div>Навык 4</div>
-    <div>
-        Мой опыт работы:
-        <div>
-            Опыт 1<br>
-            За жизнь
-        </div>
-        <div>
-            Опыт 2<br>
-            За еду
-        </div>
-        <div>
-            Опыт 3<br>
-            За стипендию
-        </div>
-    </div>
-</div>
-<div id="footer">Футер</div>
 </body>
 </html>

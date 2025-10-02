@@ -7,33 +7,44 @@
     <title>Каталог товаров</title>
 </head>
 <body>
-<div id="header">Хэдер</div>
-<div id="menu">
-    <ul>
-        <li><a href="../index.html">Главная</a></li>
-        <li><a href="news.html">Новости</a></li>
-        <li><a href="practices.html">Практики</a></li>
-        <li><a href="goods.html">Товары</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-    </ul>
+<div class="page-container">
+    <header class="header">
+        <h1>Хэдер</h1>
+    </header>
+    <nav class="nav">
+        <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
+            <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
+            <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
+            <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+    <main class="content">
+        <section>
+            <h2 class="section-title">Каталог товаров</h2>
+            <div class="products-grid">
+                <article class="product-card">
+                    <img src="../images/good1.jpg" alt="Товар 1" class="product-image">
+                    <div class="product-name">Айфон восстановленный</div>
+                    <div class="product-price">Цена: 20 000 руб.</div>
+                </article>
+                <article class="product-card">
+                    <img src="../images/good2.jpg" alt="Товар 2" class="product-image">
+                    <div class="product-name">Samsung</div>
+                    <div class="product-price">Цена: 250 000 руб.</div>
+                </article>
+                <article class="product-card">
+                    <img src="../images/good3.jpg" alt="Товар 3" class="product-image">
+                    <div class="product-name">Samsung холодильник</div>
+                    <div class="product-price">Цена: 100 000 руб.</div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Футер</p>
+    </footer>
 </div>
-<div id="content">
-    <div>
-        <img src="../images/good1.jpg" alt="Товар 1" width="150" height="150">
-        <div>Айфон восстановленный</div>
-        <div>Цена: 20 000 руб.</div>
-    </div>
-    <div>
-        <img src="../images/good2.jpg" alt="Товар 2" width="150" height="150">
-        <div>Samsung</div>
-        <div>Цена: 250 000 руб.</div>
-    </div>
-    <div>
-        <img src="../images/good3.jpg" alt="Товар 3" width="150" height="150">
-        <div>Samsung холодильник</div>
-        <div>Цена: 100 000 руб.</div>
-    </div>
-</div>
-<div id="footer">Футер</div>
 </body>
 </html>
